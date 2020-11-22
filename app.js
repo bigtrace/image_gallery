@@ -7,6 +7,6 @@ var options = {
   title: 'My Awesome Photo Gallery'
 };
 
-app.use('/photos', Gallery('D:/image_gallery/photos', options));
+app.use('/', Gallery('./photos', options));
 
 app.listen(3000);
